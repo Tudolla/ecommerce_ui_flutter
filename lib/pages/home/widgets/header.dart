@@ -4,8 +4,10 @@ import 'package:flutter/widgets.dart';
 
 
 List<Widget> header() => [
-  Padding(padding: EdgeInsets.only(
-    left: Constants.kPadding *2,
+  Padding(
+    
+    padding: EdgeInsets.only(
+    left: Constants.kPadding *1.1,
     top: Constants.kPadding,
   ),
   child: Text(
@@ -18,7 +20,7 @@ List<Widget> header() => [
   ),
   
   Padding(padding: EdgeInsets.only(
-    left: Constants.kPadding *2,
+    left: Constants.kPadding *1.1,
     
   ),
   child: Text(

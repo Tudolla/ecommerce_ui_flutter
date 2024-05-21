@@ -1,6 +1,11 @@
 import 'package:amazon_ui/pages/home/widgets/appBar.dart';
+import 'package:amazon_ui/pages/home/widgets/best_book.dart';
+import 'package:amazon_ui/pages/home/widgets/book_list.dart';
+import 'package:amazon_ui/pages/home/widgets/bottom_bar.dart';
+import 'package:amazon_ui/pages/home/widgets/fab.dart';
 import 'package:amazon_ui/pages/home/widgets/header.dart';
-import 'package:amazon_ui/pages/home/widgets/searchBar.dart';
+import 'package:amazon_ui/pages/home/widgets/bar_icon_list.dart';
+import 'package:amazon_ui/pages/home/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,12 +25,24 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           ...header(),
-
+          
+          
           searchBar(),
+          buildListIcon(),
+          const SizedBox(height: 10,),
+
+
+          BookList(),
+          BestBook(),
 
           ]
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      
+    
+      floatingActionButton:FloatingAB() ,
+      bottomNavigationBar: buildBottomBar(),
     );
   }
 }
